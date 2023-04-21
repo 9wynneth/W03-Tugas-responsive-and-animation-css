@@ -1,0 +1,107 @@
+/* 
+ Nama: Gwynneth Isviandhy
+ NIM: 0706022110006
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+		
+div {
+	font-family: Poppins;
+
+	border: solid 1px blue;
+}
+
+div#header
+{
+	text-align: center;
+	margin: 5px 2px 5px 2px;
+}
+
+div#menu
+{
+	padding:0;
+	margin: 5px 2px 5px 2px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+div#menu li
+{
+	background-color: #D3D3D3;
+	margin: 5px 2px 5px 2px;
+	width: 85%;
+	list-style-type: none;
+	text-indent: 7px;
+	padding: 0px;
+	transition: 3s;
+}
+
+div#content
+{
+	padding: 5px;
+	width: 100%;
+	display: inline-block;
+	margin: 5px 2px 5px 2px;
+	
+}
+
+@media only screen and (min-width: 600px) {
+	div#menu {
+	  width: 30%;
+	  margin: 5px 2px 5px 2px;
+	}
+	
+
+	div#content {
+	  width: 68%;
+	  margin: 5px 2px 5px 2px;
+	}
+	
+	div#menu li{
+		padding: 5px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+	div#menu {
+		justify-content: center;
+		padding: 0;
+		
+	
+		display: block;
+		margin: 5px 2px 5px 2px;
+		box-sizing: border-box;
+	}
+	
+
+	div#menu li{
+		display: inline;
+		width: auto;
+		justify-content: center;
+		margin: 5px 2px 5px 2px;
+		padding: 5px;
+	}
+
+	div#content {
+		
+		margin: 5px 2px 5px 2px;
+		display: block;
+		box-sizing: border-box;
+		width: auto;
+		
+	}
+}
+
+#menu li:hover
+{
+	border-radius: 25px;
+	color: white;
+	background-color: green;
+	transition-duration: 3s;
+	opacity: 0.5;
+}
+
+#menu li:hover{
+	opacity: 1;
+}
